@@ -23,15 +23,15 @@ function! minimap#ShowMinimap()
     endif
 
     let python_module = fnameescape(globpath(&runtimepath, 'autoload/minimap.py'))
-    exe 'pyfile ' . python_module
-    python showminimap()
+    exe 'py3file ' . python_module
+    python3 showminimap()
 endfunction
 
 function! minimap#UpdateMinimap()
-    python updateminimap()
+    python3 updateminimap()
 endfunction
 
 function! minimap#CloseMinimap()
-    python closeminimap()
+    python3 closeminimap()
 endfunction
 

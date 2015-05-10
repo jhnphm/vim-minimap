@@ -105,7 +105,7 @@ def updateminimap():
                 c.set(x, y)
 
         # pad with spaces to ensure uniform block highlighting
-        return [unicode(line).ljust(WIDTH, u'\u00A0') for line in c.rows()]
+        return [str(line).ljust(WIDTH, '\u00A0') for line in c.rows()]
 
 
     if minimap:
