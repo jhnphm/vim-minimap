@@ -1,3 +1,6 @@
+Currently this fork does not work
+=================================
+
 A code minimap for Vim
 ======================
 
